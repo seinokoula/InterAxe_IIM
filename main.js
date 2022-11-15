@@ -1,4 +1,7 @@
-particlesJS("particles-js", {
+const $touchesSimon = document.querySelectorAll(".toucheSimon");
+
+if (typeof particlesJS !== 'undefined') {
+  particlesJS("particles-js", {
     "particles": {
       "number": {
           "value": 300,
@@ -101,3 +104,41 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
   });
+}
+
+
+  function clignote(ele) {
+    let baseColor;
+    console.log(ele)
+    switch (ele.id) {
+      case "T0":
+        baseColor = "#FBA0A0";
+        ele.style.backgroundColor = '#fff'
+        break;
+      case "T1":
+        baseColor = "#D8E9FB";
+        ele.style.backgroundColor = '#fff'
+        break;
+      case "T2":
+        baseColor = "#5DFB77";
+        ele.style.backgroundColor = '#fff'
+        break;
+      case "T3":
+        baseColor = "#FBECB0";
+        ele.style.backgroundColor = '#fff'
+        break;
+      case "T4":
+        baseColor = "#BD5FFB";
+        ele.style.backgroundColor = '#fff'
+        break;
+    }
+  }
+
+  [...$touchesSimon].map(ele => {
+    ele.addEventListener("click", () => {
+        // La case cliquée change de couleur
+        clignote(ele);
+    });
+  });
+
+  setTimeout( function () { alert( "coucou fils de pute" ); }, 120000 );
