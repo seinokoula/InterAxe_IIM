@@ -109,11 +109,9 @@ if (typeof particlesJS !== 'undefined') {
 
   function clignote(ele) {
     let baseColor;
-    console.log(ele)
     switch (ele.id) {
       case "T0":
-        baseColor = "#FBA0A0";
-        ele.style.backgroundColor = '#fff'
+        console.log("Tu as trouvé la première solution !")
         break;
       case "T1":
         baseColor = "#D8E9FB";
@@ -141,7 +139,6 @@ if (typeof particlesJS !== 'undefined') {
     });
   });
 
-setTimeout(function () { alert("ALAID JAI PAS LA SOLUCE NON PLUS"); }, 120000);
   
 const linkText = document.querySelector('.link-text');
 const linkImage = document.querySelector('.link-image');
@@ -155,3 +152,18 @@ function showImgContent(e) {
 }
 
 document.addEventListener('mousemove', showImgContent);
+const first_clue = document.querySelector('#first_clue');
+
+first_clue.addEventListener('mouseover', function () {
+    document.getElementById('T0').style.backgroundColor = '#FFF';
+});
+
+const input = document.querySelector('input');
+input.addEventListener('input', function (e) {
+    if (e.target.value === 'coucou') {
+    document.getElementById('T1').style.backgroundColor = '#FFF';
+    }
+}
+);
+
+// setTimeout(function () { alert("ALAID JAI PAS LA SOLUCE NON PLUS"); }, 120000);

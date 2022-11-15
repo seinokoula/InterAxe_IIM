@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="dev.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="main">
         <div class="game">
@@ -21,18 +23,25 @@
     </div>
 
     <div class="container">
-        <a class="link" href="#">Tokyo Tower</a>
+        <a class="link" id="first_clue" href="#">Tokyo Tower</a>
         <span class="hover-container">
             <span class="link-text" aria-hidden="true">Tokyo Tower</span>
-            <a href="#">Lol</a>
             <span class="image-container">
                 <span class="image-inner">
-                    <img class="link-image" src="https://assets.codepen.io/1159990/tokyo-tower.jpg" alt="Tokyo Tower" />
+                    <a href="#" class="link-image"><img class="link-image"
+                        src="https://assets.codepen.io/1159990/tokyo-tower.jpg" alt="Tokyo Tower" /></a>
                 </span>
             </span>
         </span>
     </div>
 
+    <div class="second_clue">
+    <input id="input" type="text" onkeyup="onChangeText()" placeholder="enter"/>
+    </div>
+
+
+
     <script src="main.js"></script>
 </body>
+
 </html>
