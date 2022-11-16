@@ -171,5 +171,20 @@ input.addEventListener('input', function (e) {
 );
 
 // setTimeout(function () { alert("ALAID JAI PAS LA SOLUCE NON PLUS"); }, 120000);
+
+const backgroundInput = document.getElementById('froggy')
+const divInput = document.getElementById('froggy-color')
+backgroundInput.addEventListener('keyup', () => {
+  let input = backgroundInput.value
+  if (input.includes('background-color')) {
+    divInput.style.cssText = `${input}`
+  }
+
+  if (divInput.style.cssText.includes('background-color:')) {
+    document.getElementById('T2').style.backgroundColor = '#FFF';
+  }
+
+})
+
+
 }
-  
