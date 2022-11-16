@@ -157,7 +157,7 @@ first_clue.addEventListener('mouseover', function () {
 
 const input = document.querySelector('input');
 input.addEventListener('input', function (e) {
-    if (e.target.value === 'coucou') {
+    if (e.target.value === '#8ec5fc') {
     document.getElementById('T1').style.backgroundColor = '#FFF';
     }
 }
