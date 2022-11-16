@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+p, h1, h2, h3, h4, span, a {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #292729;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+body .main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+body .main h3, body .main h1 {
+  color: white;
+}
+body .main .stuff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  width: 80%;
+  min-width: 50vw;
+}
+body .main .stuff img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+body .main .stuff .object {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+  width: 30%;
+}
+body .main .stuff .object .round {
+  display: flex;
+  gap: 1rem;
+}
+body .main .stuff .object .round .rond {
+  width: 44px;
+  height: 44px;
+  border-radius: 99%;
+  background-color: white;
+  outline: solid 1px white;
+  border: solid 10px #292729;
+}
+body .main .stuff .object .round.active .rond {
+  background-color: #6D2B8A;
+}
+body .main .stuff .object .round .text {
+  color: white;
+}
+body .main .stuff .object .opacity1 {
+  opacity: 0.8;
+}
+body .main .stuff .object .opacity2 {
+  opacity: 0.6;
+}
+body .main .stuff .object .opacity3 {
+  opacity: 0.4;
+}
+body .main .stuff .object .opacity4 {
+  opacity: 0.2;
+}
+
+/*# sourceMappingURL=urgence1.css.map */

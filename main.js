@@ -1,4 +1,12 @@
 const $touchesSimon = document.querySelectorAll(".toucheSimon");
+console.log(window.location.pathname)
+if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+  button = document.getElementById('go')
+
+  button.addEventListener('click', () => {
+    document.location.href= '/context.html'
+  })
+}
 
 if (typeof particlesJS !== 'undefined') {
   particlesJS("particles-js", {
@@ -105,8 +113,7 @@ if (typeof particlesJS !== 'undefined') {
     "retina_detect": true
   });
 }
-
-
+if (window.location.pathname === '/dev.html') {
   function clignote(ele) {
     let baseColor;
     switch (ele.id) {
@@ -164,3 +171,5 @@ input.addEventListener('input', function (e) {
 );
 
 // setTimeout(function () { alert("ALAID JAI PAS LA SOLUCE NON PLUS"); }, 120000);
+}
+  
