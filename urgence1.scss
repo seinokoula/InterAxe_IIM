@@ -2,6 +2,7 @@
 
 p, h1, h2, h3, h4, span, a {
     font-family: 'Poppins', sans-serif;
+    text-align: left;
 }
 
 body {
@@ -26,6 +27,8 @@ body {
             align-items: center;
             width: 10vw;
             height: 5vh;
+            margin-bottom: 15vh;
+            border-radius: 30px;
             // make a hover for the button
             &:hover {
                 background-color: white;
@@ -47,8 +50,8 @@ body {
 
             img {
                 display: block;
-                // max-width:230px;
-                // max-height:95px;
+                max-width:100%;
+                max-height:100%;
                 width: auto;
                 height: auto;
             }
@@ -60,6 +63,7 @@ body {
                 width: 30%;
                 .round {
                     display: flex;
+                    flex-wrap: wrap;
                     gap: 1rem;
                     .rond {
                         width: 44px;
