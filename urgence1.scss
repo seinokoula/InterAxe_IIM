@@ -17,6 +17,23 @@ body {
         h3, h1 {
             color: white;
         }
+        a{
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10vw;
+            height: 5vh;
+            // make a hover for the button
+            &:hover {
+                background-color: white;
+                color: black;
+                // make the transition smooth
+                transition: all 0.5s ease;
+            }
+        }
         display: flex;
         justify-content: center;
         width: 100%;
@@ -78,9 +95,5 @@ body {
                 }
             }
         }
-        
-        
-
-        
     }
 }
