@@ -115,15 +115,12 @@ if (typeof particlesJS !== 'undefined') {
         break;
       case "T1":
         baseColor = "#D8E9FB";
-        ele.style.backgroundColor = '#fff'
         break;
       case "T2":
         baseColor = "#5DFB77";
-        ele.style.backgroundColor = '#fff'
         break;
       case "T3":
         baseColor = "#FBECB0";
-        ele.style.backgroundColor = '#fff'
         break;
       case "T4":
         baseColor = "#BD5FFB";
