@@ -16,9 +16,13 @@
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
     canvas {
-        z-index: 0;
+        position: absolute;
+        top: 0;
     }
 
     form {
@@ -26,6 +30,14 @@
         transform-origin: center;
         top: 50%;
         left: 50%;
+    }
+
+    img {
+        height: 30%;
+        width: 30%;
+    }
+
+    .content {
     }
 }
 

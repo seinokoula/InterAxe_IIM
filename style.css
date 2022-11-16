@@ -16,9 +16,13 @@
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 #particles-js canvas {
-  z-index: 0;
+  position: absolute;
+  top: 0;
 }
 #particles-js form {
   position: relative;
@@ -26,8 +30,17 @@
   top: 50%;
   left: 50%;
 }
-
+#particles-js img {
+  height: 30%;
+  width: 30%;
+}
 body {
   height: 100vh;
   width: 100vw;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.content {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
