@@ -4,7 +4,7 @@ if (window.location.pathname === '/' || window.location.pathname === '/index.htm
   button = document.getElementById('go')
 
   button.addEventListener('click', () => {
-    document.location.href= '/context.html'
+    document.location.href = '/context.html'
   })
 }
 
@@ -12,13 +12,13 @@ if (typeof particlesJS !== 'undefined') {
   particlesJS("particles-js", {
     "particles": {
       "number": {
-          "value": 300,
+        "value": 300,
         "density": {
           "enable": true,
-           "value_area": 800,
+          "value_area": 800,
         }
-        },
-       
+      },
+
       "color": {
         "value": '#f4f4f4',
       },
@@ -126,9 +126,6 @@ if (window.location.pathname === '/dev.html') {
       case "T2":
         baseColor = "#5DFB77";
         break;
-      case "T3":
-        baseColor = "#FBECB0";
-        break;
       case "T4":
         baseColor = "#BD5FFB";
         ele.style.backgroundColor = '#fff'
@@ -138,53 +135,53 @@ if (window.location.pathname === '/dev.html') {
 
   [...$touchesSimon].map(ele => {
     ele.addEventListener("click", () => {
-        // La case cliquée change de couleur
-        clignote(ele);
+      // La case cliquée change de couleur
+      clignote(ele);
     });
   });
 
-  
-const linkText = document.querySelector('.link-text');
-const linkImage = document.querySelector('.link-image');
 
-function showImgContent(e) {
-  x = e.clientX;
-  y = e.clientY;
-  linkImage.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-  linkText.style.setProperty('--x',(x)+'px');
-  linkText.style.setProperty('--y',(y)+'px');
-}
+  const linkText = document.querySelector('.link-text');
+  const linkImage = document.querySelector('.link-image');
 
-document.addEventListener('mousemove', showImgContent);
-const first_clue = document.querySelector('#first_clue');
+  function showImgContent(e) {
+    x = e.clientX;
+    y = e.clientY;
+    linkImage.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+    linkText.style.setProperty('--x', (x) + 'px');
+    linkText.style.setProperty('--y', (y) + 'px');
+  }
 
-first_clue.addEventListener('mouseover', function () {
+  document.addEventListener('mousemove', showImgContent);
+  const first_clue = document.querySelector('#first_clue');
+
+  first_clue.addEventListener('mouseover', function () {
     document.getElementById('T0').style.backgroundColor = '#FFF';
-});
+  });
 
-const input = document.querySelector('input');
-input.addEventListener('input', function (e) {
+  const input = document.querySelector('input');
+  input.addEventListener('input', function (e) {
     if (e.target.value === '#8ec5fc') {
-    document.getElementById('T1').style.backgroundColor = '#FFF';
+      document.getElementById('T1').style.backgroundColor = '#FFF';
     }
-}
-);
-
-// setTimeout(function () { alert("ALAID JAI PAS LA SOLUCE NON PLUS"); }, 120000);
-
-const backgroundInput = document.getElementById('froggy')
-const divInput = document.getElementById('froggy-color')
-backgroundInput.addEventListener('keyup', () => {
-  let input = backgroundInput.value
-  if (input.includes('background-color')) {
-    divInput.style.cssText = `${input}`
   }
+  );
 
-  if (divInput.style.cssText.includes('background-color:')) {
-    document.getElementById('T2').style.backgroundColor = '#FFF';
-  }
+  // setTimeout(function () { alert("ALAID JAI PAS LA SOLUCE NON PLUS"); }, 120000);
 
-})
+  const backgroundInput = document.getElementById('froggy')
+  const divInput = document.getElementById('froggy-color')
+  backgroundInput.addEventListener('keyup', () => {
+    let input = backgroundInput.value
+    if (input.includes('background-color')) {
+      divInput.style.cssText = `${input}`
+    }
+
+    if (divInput.style.cssText.includes('background-color:')) {
+      document.getElementById('T2').style.backgroundColor = '#FFF';
+    }
+
+  })
 
 
 }

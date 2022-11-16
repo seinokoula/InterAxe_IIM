@@ -30,11 +30,9 @@ body {
             margin-bottom: 15vh;
             border-radius: 30px;
             margin-top: -15%;
-            // make a hover for the button
             &:hover {
                 background-color: white;
                 color: black;
-                // make the transition smooth
                 transition: all 0.5s ease;
             }
         }
