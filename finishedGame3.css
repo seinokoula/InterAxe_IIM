@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+p,
+h1,
+h2,
+h3,
+h4,
+span,
+a {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+* {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .questionMain {
+  width: 50%;
+  height: 50%;
+  background-color: #262626;
+  border-radius: 20px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  align-items: center;
+}
+body .questionMain .text {
+  width: 80%;
+  margin-bottom: 7rem;
+  font-size: 24px;
+}
+body .questionMain .text p {
+  margin-top: 2rem;
+}
+body .questionMain .text img {
+  width: 250px;
+  margin-top: 4rem;
+  margin-left: auto;
+}
+body button {
+  outline: none;
+  padding: 0.5rem 8rem;
+  border-radius: 10px;
+  color: #C741C2;
+  box-shadow: 0 5px 25px #78038E;
+}
+body > img {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+/*# sourceMappingURL=finishedGame3.css.map */
