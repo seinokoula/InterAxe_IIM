@@ -46,27 +46,6 @@ body {
   border-radius: 30px;
 }
 
-.select {
-  display: flex;
-  justify-content: space-between;
-  height: 200px;
-  max-width: 1120px;
-  margin: 0 auto;
-}
-
-.select-content {
-  background-color: #222;
-  border-radius: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.19);
-  text-align: left;
-  padding: 1rem;
-}
-
-.text {
-  display: flex;
-  width: 30vh;
-}
-
 a {
   color: white;
   text-decoration: none;
@@ -135,6 +114,45 @@ a:hover {
 img {
   max-width: 75%;
   margin-top: 5%;
+}
+
+.groupeSelect {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 75%;
+}
+.groupeSelect .select {
+  display: flex;
+  justify-content: space-between;
+}
+.groupeSelect .select.custom {
+  width: 50%;
+}
+.groupeSelect .select-content {
+  background-color: #222;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  text-align: left;
+  padding: 1rem;
+}
+.groupeSelect .select-content.flex .text {
+  flex-direction: column;
+}
+.groupeSelect .text {
+  display: flex;
+}
+
+.nextButton {
+  display: none;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.nextButton.active {
+  display: flex;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=mission-cdeb.css.map */
