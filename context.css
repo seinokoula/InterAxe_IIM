@@ -30,17 +30,20 @@ body .main .center {
   justify-content: center;
 }
 body .main .center a {
-  margin-top: 5%;
-  background-color: white;
-  outline: none;
-  border: none;
-  border-radius: 22px;
-  width: 25%;
-  padding: 0.5rem;
-  box-shadow: 0 5px 25px #78038E;
-  text-align: center;
+  color: white;
   text-decoration: none;
-  color: #C741C2;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  height: 3vh;
+  padding: 0.5rem;
+}
+body .main .center a:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5s ease;
 }
 
 /*# sourceMappingURL=context.css.map */

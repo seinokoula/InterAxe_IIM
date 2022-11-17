@@ -174,7 +174,10 @@ img {
 
     .text {
         display: flex;
-        // width: 30vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 2rem;
     }
 }
 

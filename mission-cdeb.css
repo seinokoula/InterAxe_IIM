@@ -161,6 +161,10 @@ img {
 }
 .groupeSelect .text {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
 }
 
 .nextButton {
