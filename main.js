@@ -148,14 +148,14 @@ if (window.location.pathname === '/dev.html' || window.location.pathname === '/d
   if (document.getElementById('T0').style.backgroundColor !== 'rgb(255, 255, 255)') {
     setTimeout(function () { 
       document.getElementById('int1').classList.add('active')
-    }, 600);
+    }, 60000);
   }
 
   function giveInt2() {
     if (document.getElementById('T0').style.backgroundColor === 'rgb(255, 255, 255)' && document.getElementById('T1').style.backgroundColor !== 'rgb(255, 255, 255)') {
       setTimeout(function () { 
         document.getElementById('int2').classList.add('active')
-      }, 600);
+      }, 60000);
     }
   }
 
@@ -163,7 +163,7 @@ function giveInt3() {
   if (document.getElementById('T1').style.backgroundColor === 'rgb(255, 255, 255)' && document.getElementById('T2').style.backgroundColor !== 'rgb(255, 255, 255)') {
     setTimeout(function () { 
       document.getElementById('int3').classList.add('active')
-    }, 600);
+    }, 60000);
   }
 }
   
