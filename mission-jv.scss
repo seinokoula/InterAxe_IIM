@@ -41,6 +41,28 @@ body {
         align-items: center;
         width: 80%;
         gap: 1%;
+
+        .absolute {
+            position: relative;
+
+            #wrongChoice {
+                position: absolute;
+                top: 0;
+                color: white;
+                background-color: red;
+                width: 100%;
+                left: 0;
+                text-align: center;
+                padding: 1%;
+                border-radius: 20px;
+                transition: all 0.5s ease;
+                opacity: 0;
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
         .text {
             width: 30%;
             display: flex;
@@ -53,6 +75,41 @@ body {
         margin: 2% 0;
         > img {
             cursor: pointer;
+        }
+    }
+}
+
+.all {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./img/cockpit.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cardFinish {
+        background: rgba( 255, 255, 255, 0.75 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 12px );
+        -webkit-backdrop-filter: blur( 12px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding: 5%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+
+        a {
+            text-decoration: none;
+            padding: 1%;
+            border: 1px solid #BFFFFF;
+            border-radius: 10px;
+            width: 100px;
+            text-align: center;
+            margin-left: auto;
         }
     }
 }
