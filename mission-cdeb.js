@@ -39,7 +39,7 @@
     })
 
     select5.addEventListener('change', () => {
-        if (select5.value === 'Desktop') {
+        if (select5.value === 'Mobile') {
             checked5 = true
             toggleClass()
         }
@@ -51,4 +51,3 @@ function toggleClass() {
     }
 }
 
-    

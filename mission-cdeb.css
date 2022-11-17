@@ -13,6 +13,7 @@ h2,
 h3,
 h4,
 span,
+label,
 a {
   font-family: "Poppins", sans-serif;
   color: #fff;
@@ -153,6 +154,25 @@ img {
 .nextButton.active {
   display: flex;
   opacity: 1;
+}
+
+.ciblage {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 75%;
+  background-color: #222;
+  padding: 2rem;
+  border-radius: 30px;
+}
+
+.quizz {
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  padding: 1rem;
+  border-radius: 30px;
+  width: 40vh;
+  background-color: #222;
 }
 
 /*# sourceMappingURL=mission-cdeb.css.map */
