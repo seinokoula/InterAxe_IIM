@@ -21,6 +21,24 @@ body {
   background-color: #292729;
 }
 
+.int1 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: green;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1%;
+  transform: translate(0, -100px);
+  opacity: 0;
+  transition: transform 0.5s ease-in;
+}
+.int1.active {
+  opacity: 1;
+  transform: translate(0);
+}
+
 .main {
   display: flex;
   justify-content: center;
@@ -85,6 +103,7 @@ body {
     margin-top: 2vh;
     margin-bottom: 2vh;
   }
+
   .toucheSimon {
     width: 50px;
     height: 50px;
@@ -206,7 +225,7 @@ body {
   margin-right: auto;
   width: 50%;
   height: 25vh;
-  border: 2px solid rgb(137, 137, 137);
+  border: 2px solid #898989;
   border-radius: 30px;
 }
 
@@ -220,12 +239,12 @@ body {
     margin-right: auto;
     width: 80%;
     height: 20vh;
-    border: 2px solid rgb(137, 137, 137);
+    border: 2px solid #898989;
     border-radius: 30px;
   }
 }
 .finish {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -237,7 +256,7 @@ body {
   padding: 0.6em 2em;
   border: none;
   outline: none;
-  color: rgb(255, 255, 255);
+  color: white;
   background: #111;
   cursor: pointer;
   position: relative;

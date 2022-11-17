@@ -133,6 +133,7 @@ if (window.location.pathname === '/dev.html' || window.location.pathname === '/d
       case "T4":
         baseColor = "#BD5FFB";
         ele.style.backgroundColor = '#fff'
+        nextButton()
         break;
     }
   }
@@ -143,6 +144,29 @@ if (window.location.pathname === '/dev.html' || window.location.pathname === '/d
       clignote(ele);
     });
   });
+
+  if (document.getElementById('T0').style.backgroundColor !== 'rgb(255, 255, 255)') {
+    setTimeout(function () { 
+      document.getElementById('int1').classList.add('active')
+    }, 600);
+  }
+
+  function giveInt2() {
+    if (document.getElementById('T0').style.backgroundColor === 'rgb(255, 255, 255)' && document.getElementById('T1').style.backgroundColor !== 'rgb(255, 255, 255)') {
+      setTimeout(function () { 
+        document.getElementById('int2').classList.add('active')
+      }, 600);
+    }
+  }
+
+function giveInt3() {
+  if (document.getElementById('T1').style.backgroundColor === 'rgb(255, 255, 255)' && document.getElementById('T2').style.backgroundColor !== 'rgb(255, 255, 255)') {
+    setTimeout(function () { 
+      document.getElementById('int3').classList.add('active')
+    }, 600);
+  }
+}
+  
 
 
   const linkText = document.querySelector('.link-text');
@@ -161,17 +185,19 @@ if (window.location.pathname === '/dev.html' || window.location.pathname === '/d
 
   first_clue.addEventListener('mouseover', function () {
     document.getElementById('T0').style.backgroundColor = '#FFF';
+    giveInt2()
   });
 
   const input = document.querySelector('input');
   input.addEventListener('input', function (e) {
     if (e.target.value === '#8ec5fc') {
       document.getElementById('T1').style.backgroundColor = '#FFF';
+      giveInt3()
     }
   }
   );
 
-  // setTimeout(function () { alert("ALAID JAI PAS LA SOLUCE NON PLUS"); }, 120000);
+  
 
   const backgroundInput = document.getElementById('froggy')
   const divInput = document.getElementById('froggy-color')
@@ -187,5 +213,15 @@ if (window.location.pathname === '/dev.html' || window.location.pathname === '/d
 
   })
 
+
+  function nextButton() {
+    if (document.getElementById('T0').style.backgroundColor === 'rgb(255, 255, 255)' &&
+    document.getElementById('T1').style.backgroundColor === 'rgb(255, 255, 255)' &&
+    document.getElementById('T2').style.backgroundColor === 'rgb(255, 255, 255)' &&
+    document.getElementById('T4').style.backgroundColor === 'rgb(255, 255, 255)') {
+      document.getElementById('nextButton').style.display = 'flex'
+    }
+  }
+  
 
 }
