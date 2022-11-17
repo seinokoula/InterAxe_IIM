@@ -2,7 +2,7 @@ const $touchesSimon = document.querySelectorAll(".toucheSimon");
 if (window.location.pathname === '/InterAxe_IIM/' || window.location.pathname === '/InterAxe_IIM//index.html') {
   button = document.getElementById('go')
   button.addEventListener('click', () => {
-    document.location.href = '/context.html'
+    document.location.href = '/InterAxe_IIM/context.html'
   })
 }
 
