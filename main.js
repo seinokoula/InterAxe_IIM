@@ -1,8 +1,14 @@
 const $touchesSimon = document.querySelectorAll(".toucheSimon");
-if (window.location.pathname === '/InterAxe_IIM/' || window.location.pathname === '/InterAxe_IIM//index.html') {
+if (window.location.pathname === '/InterAxe_IIM/' || window.location.pathname === '/InterAxe_IIM/index.html' ||
+  window.location.pathname === '/index.html' || window.location.pathname === '/') {
   button = document.getElementById('go')
+  if (window.location.pathname.includes('InterAxe_IIM')) {
+    button.addEventListener('click', () => {
+      document.location.href = '/InterAxe_IIM/context.html'
+    })
+  }
   button.addEventListener('click', () => {
-    document.location.href = '/InterAxe_IIM/context.html'
+    document.location.href = '/context.html'
   })
 }
 
@@ -111,7 +117,7 @@ if (typeof particlesJS !== 'undefined') {
     "retina_detect": true
   });
 }
-if (window.location.pathname === '/InterAxe_IIM//dev.html') {
+if (window.location.pathname === '/dev.html' || window.location.pathname === '/dev.html') {
   function clignote(ele) {
     let baseColor;
     switch (ele.id) {
