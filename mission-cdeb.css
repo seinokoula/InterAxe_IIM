@@ -56,7 +56,7 @@ body {
   padding: 1rem;
   width: 75%;
   margin-top: 1rem;
-  height: 24vh;
+  height: 80vh;
   min-width: 50vw;
   color: #fff;
   background-color: #222;
@@ -201,6 +201,23 @@ img {
   border-radius: 30px;
   width: 25vh;
   background-color: #222;
+}
+
+.diagram {
+  width: 50%;
+}
+
+.dg {
+  margin-top: 10px;
+  height: 5%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  margin-top: 3%;
 }
 
 /*# sourceMappingURL=mission-cdeb.css.map */
