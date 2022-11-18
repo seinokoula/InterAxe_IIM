@@ -30,7 +30,7 @@ body {
 }
 body .questionMain {
   width: 50%;
-  height: 50%;
+  height: 65%;
   background-color: #262626;
   border-radius: 20px;
   padding: 2%;
@@ -48,16 +48,26 @@ body .questionMain .text p {
   margin-top: 2rem;
 }
 body .questionMain .text img {
+  margin-top: 1rem;
   width: 250px;
-  margin-top: 4rem;
-  margin-left: auto;
+  margin-left: 45%;
 }
-body button {
-  outline: none;
-  padding: 0.5rem 8rem;
-  border-radius: 10px;
-  color: #C741C2;
-  box-shadow: 0 5px 25px #78038E;
+body a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  height: 3vh;
+  padding: 1rem;
+  margin-top: 2%;
+}
+body a:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5s ease;
 }
 body > img {
   position: absolute;

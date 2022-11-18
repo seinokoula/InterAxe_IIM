@@ -47,7 +47,7 @@ a {
   align-items: center;
   border-radius: 30px;
   height: 3vh;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 a:hover {
   background-color: white;
