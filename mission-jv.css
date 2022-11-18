@@ -45,6 +45,9 @@ body {
 .card .card-body .absolute {
   position: relative;
 }
+.card .card-body .absolute img {
+  width: 1088px;
+}
 .card .card-body .absolute #wrongChoice {
   position: absolute;
   top: 0;
@@ -59,6 +62,22 @@ body {
   opacity: 0;
 }
 .card .card-body .absolute #wrongChoice.active {
+  opacity: 1;
+}
+.card .card-body .absolute #goodChoice {
+  position: absolute;
+  top: 0;
+  color: white;
+  background-color: green;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  padding: 1%;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.card .card-body .absolute #goodChoice.active {
   opacity: 1;
 }
 .card .card-body .text {
