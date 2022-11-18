@@ -8,6 +8,7 @@ span,
 a {
   font-family: "Poppins", sans-serif;
   color: white;
+  font-size: 16px;
 }
 
 * {
@@ -30,7 +31,7 @@ body {
 }
 body .questionMain {
   width: 50%;
-  height: 65%;
+  height: 70%;
   background-color: #262626;
   border-radius: 20px;
   padding: 2%;
@@ -50,7 +51,7 @@ body .questionMain .text p {
 body .questionMain .text img {
   margin-top: 1rem;
   width: 250px;
-  margin-left: 45%;
+  margin-left: 55%;
 }
 body a {
   color: white;
