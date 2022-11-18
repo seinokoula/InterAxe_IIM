@@ -57,6 +57,7 @@ if (document.getElementById('checkboxAge') !== null) {
     let good1 = false
     let good2 = false
     let good3 = false
+    let good4 = false
     
     const checkboxAge1 = document.getElementById('checkboxAge')
     const checkboxAge2 = document.getElementById('checkboxAge2')
@@ -101,20 +102,40 @@ if (document.getElementById('checkboxAge') !== null) {
                 reseau3.checked === true &&
                 reseau4.checked === true &&
                 reseau5.checked === false) {
-                console.log('lala')
                 good3 = true
             }
         })
     })
 
+    const ville1 = document.getElementById('ville0')
+    const ville2 = document.getElementById('ville1')
+    const ville3 = document.getElementById('ville2')
+    const ville4 = document.getElementById('ville3')
+    const ville5 = document.getElementById('ville4')
+    const ville6 = document.getElementById('ville5')
+    const $ville = document.querySelectorAll('.ville');
+
+    [...$ville].map(ele => {
+        ele.addEventListener('click', () => {
+            if (ville1.checked === false &&
+                ville2.checked === false &&
+                ville3.checked === false &&
+                ville4.checked === false &&
+                ville5.checked === false &&
+                ville6.checked === true) {
+                    good4 = true
+                }
+        })
+    })
+
     window.addEventListener('click', () => {
-        if (good1 && good2 && good3) {
+        if (good1 && good2 && good3 && good4) {
             document.getElementById('next_page').classList.add('active')
         }
     })
 
     document.getElementById('next_page').addEventListener('click', () => {
-        if (good1 && good2 && good3) {
+        if (good1 && good2 && good3 && good4) {
             if (window.location.pathname.includes('InterAxe_IIM')) {
                 document.getElementById('next_page').addEventListener('click', () => {
                   document.location.href = '/InterAxe_IIM/mission-cdeb-3.html'
